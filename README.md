@@ -1,5 +1,5 @@
 # Training-JS
 
-Ce repo a pour objectif de retracer mon apprentissage de `JavaScript`.
+This repository documents my journey in learning `JavaScript`.
 
-Vous y trouverez les `fondamentaux` du `langage` ainsi que différents `projets` pratiques visant à mettre en application les notions `étudiées` et à renforcer mes `compétences`.
+It includes the `fundamentals` of the `language` as well as practical `projects` designed to apply key `concepts` and strengthen my `skills`.
