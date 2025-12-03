@@ -1,17 +1,26 @@
 let listeMots = ["Cachalot", "Pétunia", "Serviette"]
+let listePhrases = ["Pas de panique !", "La vie, l’univers et le reste", "Merci pour le poisson"]
 
-let score = 0 
+let choixUtilisateur = prompt("Voulez-vous une liste de mots ou une liste de phrase ?") 
 
-let motUtilisateur = prompt("Rentrez le mot : " + listeMots[0])
+while (choixUtilisateur !== "phrases" && choixUtilisateur !== "mots") {
+    choixUtilisateur = prompt("Voulez-vous une liste de mots ou une liste de phrase ?")
+}
 
-if (motUtilisateur === listeMots[0]) { score++ }
+let score = 0
 
-motUtilisateur = prompt("Rentrez le mot : " + listeMots[1])
+if (choixUtilisateur === "mots") {
+    for (let i = 0; i < 3; i++) {
+        let motUtilisateur = prompt("Rentrez le mot : " + listeMots[i])
+        if (motUtilisateur === listeMots[i]) {score++}
+    }
+} else if (choixUtilisateur === "phrases") {
+    for (let i = 0; i < 3; i++) {
+        let motUtilisateur = prompt("Rentrez la phrase : " + listePhrases[i])
+        if (motUtilisateur === listePhrases[i]) {score++}
+    }
+}
 
-if (motUtilisateur === listeMots[1]) { score++ }
 
-motUtilisateur = prompt("Rentrez le mot : " + listeMots[2])
-
-if (motUtilisateur === listeMots[2]) { score++ }
 
 console.log(score)
